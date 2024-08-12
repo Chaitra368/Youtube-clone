@@ -79,7 +79,7 @@ p {
             border-width: 1px;
             border-color: rgb(192,192,192);
             border-radius: 2px;
-            box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+            box-shadow: inset 1px 2px 3px rgba(0,0,0,0.07);
         }
 
         .search-bar::placeholder{
