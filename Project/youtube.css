@@ -3,11 +3,17 @@ p {
             margin-top: 0;
             margin-bottom: 0;
         }
+        body{
+            padding-top: 67px;
+            padding-left: 92px;
+        }
         .thumbnail{
             width: 100%;
         }
         .thumbnail-row{
             margin-bottom: 12px;
+            position: relative;
+            z-index: 1;
         }
         .video-grid{
             display: grid;
@@ -44,6 +50,15 @@ p {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            background-color: white ;
+            border-bottom-width: 1px;
+            border-bottom-color: rgb(240,240,204);
+            border-bottom-style: solid;
+            z-index: 2;
         }
 
         .left-section{
@@ -142,4 +157,68 @@ p {
         .myprofile-icon{
             height: 32px;
             border-radius: 16px;
+        }
+
+        .side-bar{
+            position: fixed;
+            background-color: lightblue;
+            color: white;
+            left: 0;
+            bottom: 0;
+            top: 57px;
+            width: 72px;
+        }
+
+        
+
+        .video-time{
+            background-color: black;
+            color: white;
+            position: absolute;
+            right: 5px;
+            bottom: 8px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-left: 4px;
+            padding-right: 4px;
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: 500;
+            border-radius: 2px;
+        }
+
+        .notifications-box{
+            position: relative;
+        }
+        .notification-count{
+            position: absolute;
+            background-color: #cc0000;
+            border-top-left-radius: 80px;
+            border-top-right-radius: 80px;
+            border-bottom-right-radius: 80px;
+            border-bottom-left-radius: 80px;
+            top: -3px;
+            right: -7px;
+            color: white;
+            border: 2px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            padding-top: 0px;
+            padding-right: 5px;
+            padding-bottom: 0px;
+            padding-left: 5px;
+        }
+
+        .sidebar{
+            height: 76px;
+        }
+
+        .sidebar:hover{
+            background-color: rgb(192,192,192);
+        }
+
+        .side-icons{
+            height: 24px;
         }
