@@ -4,8 +4,11 @@ p {
             margin-bottom: 0;
         }
         body{
-            padding-top: 67px;
+            padding-top: 82px;
             padding-left: 92px;
+            padding-right: 24px;
+            background-color: rgb(248,248,248);
+            z-index: 0;
         }
         .thumbnail{
             width: 100%;
@@ -21,6 +24,17 @@ p {
             column-gap: 16px;
             row-gap: 40px;
         }
+        @media (max-width: 700px){
+            .video-grid{
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (min-width: 1100px){
+            .video-grid{
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+
         .video-info-grid{
             display: grid;
             grid-template-columns: 50px 1fr;
@@ -58,7 +72,7 @@ p {
             border-bottom-width: 1px;
             border-bottom-color: rgb(240,240,204);
             border-bottom-style: solid;
-            z-index: 2;
+            z-index: 100;
         }
 
         .left-section{
@@ -80,7 +94,7 @@ p {
             flex: 1;
             margin-left: 70px;
             margin-right: 35px;
-            max-width: 600px ;
+            max-width: 460px ;
             display: flex;
             align-items:center;
         }
@@ -122,7 +136,25 @@ p {
             border-color: rgb(192,192,192);
             margin-left: -1px;
             margin-right: 8px;
+            position: relative;
 
+        }
+        .search-show{
+            position: absolute;
+            font-size: 12px;
+            font-family: Roboto;
+            color: white;
+            background-color: gray;
+            padding: 3px;
+            border-radius: 2px;
+            opacity: 2;
+            bottom: -30px;
+            left:11px;
+            opacity: 0;
+            pointer-events: none ;
+        }
+        .search-button:hover .search-show{
+            opacity: 1;
         }
 
         .voice-button{
@@ -161,12 +193,15 @@ p {
 
         .side-bar{
             position: fixed;
-            background-color: lightblue;
             color: white;
+            background-color: white;
             left: 0;
             bottom: 0;
-            top: 57px;
+            top: 54px;
             width: 72px;
+            z-index:200;
+            padding-top: 5px;
+            border-top-width: 0;
         }
 
         
@@ -206,10 +241,11 @@ p {
         }
 
         .sidebar{
-            height: 76px;
+            height: 74px;
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
         }
 
         .sidebar:hover{
@@ -218,4 +254,11 @@ p {
 
         .side-icons{
             height: 24px;
+            margin-bottom: 5px;
+        }
+
+        .sidebar div{
+            font-family: Roboto;
+            font-size: 10px;
+            color: black;
         }
