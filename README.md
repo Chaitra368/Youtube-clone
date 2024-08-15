@@ -1,2 +1,3 @@
 # Youtube-clone
- I have been implementing html,css to replicate or clone the website of youtube.
+You can find the code to clone youtube's webpage.
+This is my journey to replicate youtube website with html,css.
